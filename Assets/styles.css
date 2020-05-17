@@ -1,0 +1,264 @@
+@tailwind base;
+
+/* Sticky Header */
+.header {
+    position: absolute;
+    z-index: 1;
+}
+
+/* Main Menu */
+#main-menu {
+    display: inline;
+    list-style: none;
+    font-family: 'Average';
+    /* font-weight: 700; */
+    @apply text-lg;
+    @apply flex;
+    @apply items-center;
+}
+
+#main-menu li:after {
+    content: " "
+}
+
+#main-menu li:last-child:after {
+    content: " ";
+}
+
+.main-menu a {
+    /* @apply underline; */
+    text-decoration: none;
+    @apply transition;
+    @apply duration-200;
+    @apply ease-in-out;
+}
+
+.main-menu a:hover {
+    @apply text-green;
+}
+
+/* Responsive Menu */
+@screen md {
+    #main-menu {
+        @apply text-lg;
+    }
+
+    #main-menu li {
+        display: inline;
+        @apply ml-4;
+    }
+}
+
+@screen lg{
+    #main-menu {
+        @apply text-xl;
+    }
+
+    #main-menu li {
+        display: inline;
+        @apply ml-4;
+    }
+}
+
+@screen xl{
+    #main-menu {
+        @apply text-2xl;
+    }
+
+    #main-menu li {
+        display: inline;
+        @apply ml-10;
+    }
+}
+
+/* Hero */
+#hero {
+    background: url("../img/hero2.jpg");
+    background-size: cover!important;
+    background-position: bottom;
+    height: 75vh;
+    z-index: 2;
+}
+
+h1 {
+    font-family: 'Fjalla One';
+    text-shadow: 0px 2px 5px #000000;
+    @apply text-7xl;
+    @apply text-white;
+}
+
+/* Carousel */
+.carousel {
+    display: flex;
+    list-style: none;
+    @apply justify-between;
+}
+
+/* Content */
+p {
+    font-family: 'Average';
+}
+
+h3 {
+    font-family: 'Fjalla One';
+    @apply text-green;
+    @apply text-3xl;
+}
+
+#blurb-content {
+    @apply opacity-75;
+    @apply transition;
+    @apply duration-200;
+    @apply ease-in-out;
+}
+
+#blurb-content:hover {
+    @apply opacity-100;
+}
+
+.extend a {
+    @apply text-blue;
+    @apply transition;
+    @apply duration-200;
+    @apply ease-in-out;
+}
+
+.extend a:hover {
+    @apply text-lightgreen;
+}
+
+/* Previous Clients */
+
+h2 {
+    font-family: 'Fjalla One';
+    @apply text-blue;
+    @apply text-5xl;
+}
+
+/* div {
+    position: relative;
+    width: 200px;
+    height: 200px;
+}
+img {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+}
+.image {
+    min-height: 50px
+} */
+
+.client img {
+    filter: grayscale(100%);
+}
+
+/* Contact Form */
+.text-box {
+    @apply py-1;
+    @apply px-1;
+    @apply bg-platinum;
+    @apply bg-opacity-50;
+    @apply border-b-2;
+    @apply border-white;
+    @apply w-full;
+    font-family: 'Average';
+}
+
+.text-box::placeholder{
+    @apply text-white;
+}
+
+.contact_submit {
+    @apply bg-white;
+    @apply bg-opacity-50;
+    @apply py-2;
+    @apply px-2;
+    @apply transition;
+    @apply rounded-none;
+    @apply duration-200;
+    @apply border-b-2;
+    @apply border-white;
+    font-family: 'Average', sans-serif;
+    @apply text-white;
+}
+
+.contact_submit:hover {
+    @apply bg-lightgreen;
+}
+
+.contact_submit:active {
+    @apply border-t-2;
+    @apply border-b-0;
+    @apply border-white;
+}
+
+/* Socials */
+.socialcont {
+    content: "";
+}
+
+.socialcont::before {
+    content: "";
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.socialinner {
+    vertical-align: middle;
+}
+
+.social {
+    @apply opacity-75;
+    @apply transition;
+    @apply duration-200;
+}
+
+.social:hover {
+    @apply opacity-100;
+}
+
+/* Misc */
+.force-top {
+    z-index: 999;
+}
+
+.menu-force-top {
+    z-index: 9999;
+}
+
+.blocked {
+    white-space: nowrap;
+    word-spacing: 0px;
+}
+
+/* image styles */
+.img3 {
+    @apply object-cover;
+    @apply w-full;    
+    @apply bg-white;
+}
+
+@screen sm {
+    .img3 {
+        @apply h-small;
+    }
+}
+
+@screen lg {
+    .img3 {
+        @apply h-medium;
+    }
+}
+
+.imgMouseOverLeft {
+    @apply opacity-50;
+}
+
+.imgMouseOverLeft:hover {
+    @apply opacity-100;
+}
+
+@tailwind components;
+@tailwind utilities;

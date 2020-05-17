@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<meta charset="utf-8">
+
+<!-- <link rel="stylesheet" href="Assets/style.css"> -->
+<link href="https://fonts.googleapis.com/css2?family=Average&family=Fjalla+One&family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+<!-- <script src="http://localhost:8000/Assets/node_modules/animejs/lib/anime.min.js"></script> -->
+<script type="module" src="Assets/playground.js"></script>
+
+<style>
+    .animejs_test {
+        width: 50px;
+        height: 50px;
+        background-color: #000;
+    }
+
+    .green_block {
+        display: inline-block;
+        background-color: #b8f2e6;
+        width: 25px;
+        height: 25px;
+    }
+
+    .controls {
+        display: relative;
+    }
+
+    .play {
+        display: inline-block;
+        padding: 10px 10px 10px 10px;
+        background-color: #5e6472;
+        border: none;
+        color: white;
+    }
+
+    .pause {
+        display: inline-block;
+        padding: 10px 10px 10px 10px;
+        background-color: #5e6472;
+        border: none;
+        color: white;
+    }
+
+</style>
+
+<title>Drapaudi: Sourcing Done Right</title>
+
+</head>
+<body>
+
+    <p>Anime test:</p>
+    <div class="seek_test">
+        <div class="animejs_test">
+        </div>
+        <input type="range" class="progress" value="0"/>
+    </div>
+
+    <br />
+    <!-- 
+    var stagger = anime({
+        targets: '.basic-staggering-demo .el',
+        translateX: 270,
+        delay: anime.stagger(100), // increase delay by 100ms for each elements.
+        autoplay: false
+    });
+    
+    var play_button = document.getElementById('#play');
+    play_button.onclick = stagger.play;
+    
+    var pause_button = document.getElementById("#pause");
+    pause_button.onclick = stagger.pause; -->
+
+    <div class="basic-staggering-demo">
+        <div class="line">
+            <div class="green_block"></div>
+        </div>
+        <div class="line">
+            <div class="green_block"></div>
+        </div>
+        <div class="line">
+            <div class="green_block"></div>
+        </div>
+        <div class="line">
+            <div class="green_block"></div>
+        </div>
+        <div class="line">
+            <div class="green_block"></div>
+        </div>
+        <div class="line">
+            <div class="green_block"></div>
+        </div>
+
+        <div class="controls">
+            <button type="button" class="play">
+                Play
+            </button>
+            <button type="button" class="pause">
+                Pause
+            </button>
+        </div>
+    </div>
+
+</body>
+</html>

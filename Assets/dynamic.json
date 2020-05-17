@@ -1,0 +1,30 @@
+{
+    "carousel": [
+        {
+            "headline": "The Finest Products at the Best Prices. Always.",
+            "bg": "hero2.png"
+        },
+        {
+            "headline": "Communication You Can Depend on.",
+            "bg": "hero1.png"
+        }
+    ],
+    "companies": [
+        {
+            "name": "Tillys",
+            "logo": "img/companies/tillys.png"
+        },
+        {
+            "name": "Costco Wholesale",
+            "logo": "img/companies/costco.png"
+        },
+        {
+            "name": "Tractor Supply Co",
+            "logo": "img/companies/tsc.png"
+        },
+        {
+            "name": "Burlington Coat Company",
+            "logo": "img/companies/bcc.png"
+        }
+    ]
+}
